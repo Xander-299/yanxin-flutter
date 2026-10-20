@@ -16,7 +16,7 @@
 | 覆盖安装 | `adb install -r` → `Success`（用户数据保持：修复前后统计页支出均为 **286.88**） |
 
 > ⚠️ 本轮踩坑：`gradlew` 必须在 `source env.sh` 之后跑 —— 否则 `GRADLE_USER_HOME` 缺失，
-> Gradle 去用 `C:\Users\panda\.gradle` 的默认目录并直接报
+> Gradle 去用 `<USER_HOME>\.gradle` 的默认目录并直接报
 > `journal-1.lock (拒绝访问。)`，2 秒即 BUILD FAILED（表现像「构建坏了」，实为环境变量没注入）。
 
 ## 2. 分类占比圆环（A 项）
